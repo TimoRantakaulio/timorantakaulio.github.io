@@ -1,0 +1,307 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;}
+h1
+	{margin-top:20.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:20.0pt;
+	font-family:"Arial",sans-serif;
+	font-weight:normal;}
+h2
+	{margin-top:18.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Arial",sans-serif;
+	font-weight:normal;}
+h3
+	{margin-top:16.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Arial",sans-serif;
+	color:#434343;
+	font-weight:normal;}
+h4
+	{margin-top:14.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Arial",sans-serif;
+	color:#666666;
+	font-weight:normal;}
+h5
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;
+	color:#666666;
+	font-weight:normal;}
+h6
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;
+	color:#666666;
+	font-weight:normal;
+	font-style:italic;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:26.0pt;
+	font-family:"Arial",sans-serif;}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:16.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:15.0pt;
+	font-family:"Arial",sans-serif;
+	color:#666666;}
+.MsoChpDefault
+	{font-size:11.0pt;
+	font-family:"Arial",sans-serif;}
+.MsoPapDefault
+	{line-height:115%;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=FI>
+
+<div class=WordSection1>
+
+<h1 style='margin-top:12.0pt;line-height:normal'><a name="_x4jiloylkxsd"></a><span
+lang=EN>Linguistic knowledge in collaboration with NLP for languages of Karelia</span></h1>
+
+<h2><a name="_v168aqwnu0ht"></a><span lang=EN>Introduction</span></h2>
+
+<p class=MsoNormal style='margin-top:12.0pt;line-height:normal'><span lang=EN>This
+summer I participated in a very interesting research project in the Google
+Summer of Code 2021 program. The work was coordinated by Tommi Pirinen and Jack
+Rueter, with whom we have been working earlier in different projects,
+especially in connection with the Karelian language. Karelian has a large
+number of dictionaries, and also electronic resources, but there are several
+translation directions that are often missing, or less complete. In this
+project we wanted to improve the situation. The resources created during the
+summer are openly available, and we hope they will contribute future dictionary
+work in the Karelian language, which is a field that certainly needs continued
+development to flourish. </span></p>
+
+<h2 style='margin-top:12.0pt;line-height:normal'><a name="_p56phccjhtzz"></a><span
+lang=EN>Karelian dictionaries</span></h2>
+
+<p class=MsoNormal style='margin-top:12.0pt;line-height:normal'><span lang=EN>Karelian
+has two main varieties, Karelian Proper and Livvi Karelian. Finnish is also
+closely related, and within Karelian there is a complex dialect continuum. The
+task was to approve of translation pairs for the three languages Finnish-Livvi,
+Finnish-Karelian and Karelian-Livvi. Defining the varieties used in this work
+was not trivial, and is a topic that could be discussed in great length. </span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;line-height:normal'><span lang=EN>One
+problem is the definition of the language Karelian Proper (krl), this is, in
+fact, problematic since it is represented by two different writing systems, a
+northern variant published in the newspaper Vienan karjala and southern variant
+native to Tver. The language form used in this project features that of
+northern Karelian Proper as described in the Russian-Northern Karelian Proper
+dictionary of 2015 (Русско-карельский словарь (севернокарельские диалекты) =
+Venäjä-viena šanakirja / сост.: Зайков П. M. [и др.]. – Петрозаводск:
+Периодика, 2015. – 360 с. ISBN 978-5-88170-255-7.).</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;line-height:normal'><span lang=EN>The
+Finnish-Livvi (fin-olo) translation pairs were extended from materials from an
+open-source project funded through the Kone Language Programme begun in 2013.
+Since I had been working with these materials in that time, they familiar for
+me and this revisit was very useful and productive, and also different from
+other language pairs. </span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;line-height:normal'><span lang=EN><a
+href="https://apertium.github.io/apertium-fin-olo/apertium-fin-olo.fin-olo.dix.html"><span
+style='color:#1155CC'>https://apertium.github.io/apertium-fin-olo/apertium-fin-olo.fin-olo.dix.html</span></a>
+</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;line-height:normal'><span lang=EN>For
+example, work with the Finnish-(Northern) Karelian Proper (fin-krl) required
+personal knowledge of the language and the use of a Russian-Karelian (Northern
+Karelian Proper) dictionary. With these resources, however, the dictionary was
+possible to extend very well. </span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;line-height:normal'><span lang=EN><a
+href="https://apertium.github.io/apertium-fin-krl/apertium-fin-krl.fin-krl.dix.html"><span
+style='color:#1155CC'>https://apertium.github.io/apertium-fin-krl/apertium-fin-krl.fin-krl.dix.html</span></a>
+</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;line-height:normal'><span lang=EN>Now,
+the Karelian-Livvi dictionary work was a totally different issue. No previous
+dictionaries, written or online, were available. It’s also an important example
+about work where a dictionary is built between two endangered language
+varieties, or the varieties of same language. </span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;line-height:normal'><span lang=EN><a
+href="https://github.com/apertium/apertium-krl-olo"><span style='color:#1155CC'>https://github.com/apertium/apertium-krl-olo</span></a>
+</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;line-height:normal'><span lang=EN>For
+this last dictionary, Khalid Alnajar, who had worked on the advancement of the
+Veʹrdd online dictionary editing platform in GSoC 2020 (<a
+href="https://www.khalidalnajjar.com/verdd-dictionary-editing-tool/"><span
+style='color:#1155CC'>https://www.khalidalnajjar.com/verdd-dictionary-editing-tool/</span></a>)
+used an algorithm he had developed for predicting translation pairs in previous
+projects. It was very nice to see such continuing collaboration between these
+projects from different summers. Karelian-Livvi dictionary part was indeed very
+different from other languages I worked on this period. </span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;line-height:normal'><span lang=EN>The
+task of approving translations was done according to two basic workflows. One
+was something I could perform directly online in Veʹrdd, and the other involved
+collaboration with others working with the Veʹrdd multilingual dictionary
+databases.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;line-height:normal'><span lang=EN>The
+first alternative was to use the online Veʹrdd editing platform, where
+source-language words could be searched for in many numbers of ways, such as
+part of speech, but it also supports regular expressions and filtering for
+approved word pairs. </span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;line-height:normal'><span lang=EN>The
+second alternative applied the inherent knowledge of Verdd content in
+coordination with algorithmic predictions of feasible translation pairs. In
+this latter workflow my duty as editor was to approve all correct translation
+pairs even if they were secondary meanings. The results of this second flow
+were then automatically uploaded to the system and approved for further
+download and incorporation into the Apertium github repositories.</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;line-height:normal'><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN>After completing my editing work, my mentor
+Jack Rueter went over the materials before checking them into the Apertium
+github repositories. Links to the history below show the input from our work in
+order they were done in.</span></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span lang=EN>Fin-olo:</span></b></p>
+
+<p class=MsoNormal><span lang=EN>From commit #: <a
+href="https://github.com/apertium/apertium-fin-olo/commit/56809b28f8c4ff347515c5b8e13cb2211e311dde#diff-f6e2697df83a8de9d59a8685fb1227831b057799f3a1765ef16bc127cc265d92"><span
+style='color:#1155CC'>56809b28f8c4ff347515c5b8e13cb2211e311dde</span></a> </span></p>
+
+<p class=MsoNormal><span lang=EN>To commit #: <a
+href="https://github.com/apertium/apertium-fin-olo/commit/f3807b8c47578f776ea7152b59ce070e3b2c7438#diff-f6e2697df83a8de9d59a8685fb1227831b057799f3a1765ef16bc127cc265d92"><span
+style='color:#1155CC'>f3807b8c47578f776ea7152b59ce070e3b2c7438</span></a></span></p>
+
+<p class=MsoNormal><span lang=EN> </span></p>
+
+<p class=MsoNormal><b><span lang=EN>Fin-krl:</span></b></p>
+
+<p class=MsoNormal><span lang=EN>From commit #: <a
+href="https://github.com/apertium/apertium-fin-krl/commit/74e79ef3cc3a971d3b092f4a7ff093c334cfdd59#diff-a1126afce3ab0c7abd6a5658f3caa4158d09159d6560a14e8848237f41d36f3f"><span
+style='color:#1155CC'>74e79ef3cc3a971d3b092f4a7ff093c334cfdd59</span></a></span></p>
+
+<p class=MsoNormal><span lang=EN>To commit #: <a
+href="https://github.com/apertium/apertium-fin-krl/commit/68524436e454c106430df6878e6f1ccd0d049880#diff-a1126afce3ab0c7abd6a5658f3caa4158d09159d6560a14e8848237f41d36f3f"><span
+style='color:#1155CC'>68524436e454c106430df6878e6f1ccd0d049880</span></a></span></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span lang=EN>Krl-olo:</span></b></p>
+
+<p class=MsoNormal><span lang=EN>Commit #:<a
+href="https://github.com/apertium/apertium-krl-olo/commit/f5c3092442b7ac4cdcbf1af9ce20939e06a12835#diff-17f7c89dc6e6ec8d3eea05248828404c92915a63fd0b7cfee9183ac62bac608c"><span
+style='color:#1155CC'>f5c3092442b7ac4cdcbf1af9ce20939e06a12835</span></a></span></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN>The resulting content for this summer’s work
+can be enumerated as follows:</span></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN>The Finnish-Livvi dictionary contains 30,212
+translation pairs</span></p>
+
+<p class=MsoNormal><span lang=EN>The Finnish-Karelian dictionary contains 2,297
+translation pairs</span></p>
+
+<p class=MsoNormal><span lang=EN>The Karelian-Livvi dictionary contains 6,419
+translation pairs</span></p>
+
+<h2 style='margin-top:12.0pt;line-height:normal'><a name="_95ye26t7y0g8"></a><span
+lang=EN>Remaining questions</span></h2>
+
+<p class=MsoNormal style='margin-top:12.0pt;line-height:normal'><span lang=EN>One
+issue is whether proper names should be included in the dictionary. From a
+machine translation perspective place names are definitely a must, but maybe
+there should also be room for personal names. When we delve into local place
+names, finding Finnish equivalents becomes problematic, as there may be
+historical names available,  on the one hand, and an absence of them, on the
+other. So where do we go to find the Finnish place name, a difficult Russian
+transliteration or an easier fit from Karelian or Livvi? </span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;line-height:normal'><span lang=EN>The
+Finnish orthographic solution may also present problems. Should the non-native
+hushed sibilants be written š and ž or sh and zh? Should the vowels be written
+long as they are in Karelian and Livvi, or short as they are in Russian, e.g.
+Tuuksa in Finnish or Tuksa, which is a simple transliteration of the Russian
+Тукса. </span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;line-height:normal'><span lang=EN>Some
+of these are questions that should not be solved at levels of individual
+dictionaries, but when we create new resources from different dictionaries, it
+would be beneficial to harmonize the result one way or another. Lastly,
+dictionary work is never complete and there are always some missing lexemes and
+translations, which hopefully will be covered in future work.</span></p>
+
+</div>
+
+</body>
+
+</html>
